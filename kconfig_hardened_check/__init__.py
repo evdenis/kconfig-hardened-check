@@ -501,6 +501,8 @@ def construct_checklist(l, arch):
         l += [OptCheck('userspace_hardening', 'defconfig', 'INTEGRITY', 'y')]
     if arch == 'ARM':
         l += [OptCheck('userspace_hardening', 'my', 'INTEGRITY', 'y')]
+    l += [OptCheck('userspace_hardening', 'my', 'IMA_READ_POLICY', 'is not set')]
+    l += [OptCheck('userspace_hardening', 'my', 'IMA_WRITE_POLICY', 'is not set')]
     if arch in ('ARM', 'X86_32'):
         l += [OptCheck('userspace_hardening', 'defconfig', 'VMSPLIT_3G', 'y')]
     if arch in ('X86_64', 'ARM64'):

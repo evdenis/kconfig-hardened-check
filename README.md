@@ -206,6 +206,8 @@ CONFIG_BPF_JIT                               | is not set  |    my    | cut_atta
 CONFIG_VIDEO_VIVID                           | is not set  |    my    | cut_attack_surface |   FAIL: "m"
 CONFIG_INPUT_EVBUG                           | is not set  |    my    | cut_attack_surface |   FAIL: "m"
 CONFIG_INTEGRITY                             |      y      |defconfig |userspace_hardening |   OK
+CONFIG_IMA_READ_POLICY                       | is not set  |    my    |userspace_hardening |   OK
+CONFIG_IMA_WRITE_POLICY                      | is not set  |    my    |userspace_hardening |   OK
 CONFIG_ARCH_MMAP_RND_BITS                    |     32      |  clipos  |userspace_hardening |   FAIL: "28"
 
 [+] Config check is finished: 'OK' - 57 / 'FAIL' - 81
